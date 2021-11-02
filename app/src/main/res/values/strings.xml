@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Решение квадратных уравнений</string>
+    <string name="title">Решить квадратное уравнение</string>
+    <string name="title1">a*x*x + b*x + c = 0</string>
+    <string name="a">Введите старший коеффициент А</string>
+    <string name="b">Введите коеффициент В</string>
+    <string name="c">Введите коеффициент С</string>
+    <string name="calculate">Вычислить</string>
+
+</resources>
