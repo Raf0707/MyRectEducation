@@ -1,5 +1,7 @@
 package com.example.recteducation;
 
+import static java.lang.Math.*;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
@@ -44,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (b == 0) {
             if ((-c / a) > 0) {
-                x1 = Math.sqrt(-c / a);
-                x2 = (-1) * (Math.sqrt(-c / a));
+                x1 = sqrt(-c / a);
+                x2 = (-1) * (sqrt(-c / a));
                 result.setText(String.format(Locale.US, "x1 =  %f\n\nx2 = %f", x1, x2));
             }
             else if ((-c / a) < 0) {
@@ -66,17 +68,19 @@ public class MainActivity extends AppCompatActivity {
             x1 = 0;
             result.setText("x = " + x1);
         }
-        else if (a > 0 && b > 0 && c > 0) {
-            double D = b * b - 4 * a * c;
+        else if (a != 0 && b != 0 && c != 0) {
+            double D = (b * b) - (4 * a * c);
 
             if (D == 0) {
                 x1 = -b / (2 * a);
                 result.setText("x = " + x1);
-            } else if (D > 0) {
-                x1 = (-b + Math.sqrt(D)) / 2 * a;
-                x2 = (-b - Math.sqrt(D)) / 2 * a;
+            }
+            else if (D > 0) {
+                x1 = (-b + (double) sqrt(D)) / (2 * a);
+                x2 = (-b - (double) sqrt(D)) / (2 * a);
                 result.setText(String.format(Locale.US, "x1 =  %f\n\nx2 = %f", x1, x2));
-            } else if (D < 0) {
+            }
+            else if (D < 0) {
                 result.setText("Уравнение имеет 2 комплексных корня");
             }
         }
