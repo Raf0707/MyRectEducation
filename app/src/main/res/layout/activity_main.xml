@@ -28,28 +28,32 @@
         android:lines="2"
         android:singleLine="false"
         android:text="@string/title1"
-        android:textSize="24dp" />
+        android:textSize="24sp" />
 
     <EditText
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/a"
-        android:hint="@string/a"/>
+        android:hint="@string/a"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
 
     <EditText
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/b"
-        android:hint="@string/b"/>
+        android:hint="@string/b"
+        tools:ignore="Autofill,TextFields" />
 
     <EditText
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/c"
-        android:hint="@string/c"/>
+        android:hint="@string/c"
+        android:autofillHints=""
+        tools:ignore="TextFields" />
 
     <Button
 
