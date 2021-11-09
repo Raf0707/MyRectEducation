@@ -55,7 +55,8 @@
         android:id="@+id/c"
         android:hint="@string/c"
         <!--android:autofillHints=""-->
-        tools:ignore="TextFields" />
+        <!--tools:ignore="TextFields"-->
+    />
 
     <Button
 
