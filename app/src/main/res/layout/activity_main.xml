@@ -36,7 +36,8 @@
         android:id="@+id/a"
         android:hint="@string/a"
         android:importantForAutofill="no"
-        tools:ignore="TextFields" />
+        <!--tools:ignore="TextFields"--> 
+              />
 
     <EditText
 
@@ -44,7 +45,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/b"
         android:hint="@string/b"
-        tools:ignore="Autofill,TextFields" />
+        <!--tools:ignore="Autofill,TextFields"-->
+    />
 
     <EditText
 
@@ -52,7 +54,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/c"
         android:hint="@string/c"
-        android:autofillHints=""
+        <!--android:autofillHints=""-->
         tools:ignore="TextFields" />
 
     <Button
@@ -68,37 +70,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        />
 
     <TextView
 
         android:id="@+id/res"
         android:layout_width="match_parent"
         android:layout_height="125dp"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        />
-
+    
 </LinearLayout>
